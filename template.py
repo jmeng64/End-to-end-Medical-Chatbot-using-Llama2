@@ -16,6 +16,7 @@ list_of_files = [
     "store_index.py",
     "static/.gitkeep",
     "templates/chat.html"
+    
 
 ]
 
@@ -30,11 +31,11 @@ for filepath in list_of_files:
 
    if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
       with open(filepath, 'w') as f:
-         pass
-         logging.info(f"Creating empty file: {filepath}")
+         pass 
+         logging.info(f"Creating empty file: {filepath}")  # JM: will a line after pass be executed? 
 
    else:
-      logging.info(f"{filename} is already created")
+      logging.info(f"{filename} already exists")
       
       
     
