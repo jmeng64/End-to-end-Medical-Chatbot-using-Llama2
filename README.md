@@ -45,8 +45,11 @@ llama-2-7b-chat.ggmlv3.q4_0.bin
 https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
 ```
 
+# first install the packages. 
+pip install -r requirements.txt 
+
 ```bash
-# run the following command
+# run the following command to load index
 python store_index.py
 ```
 
